@@ -74,7 +74,7 @@ header .a:hover{
 .slider{
     overflow: hidden;
     height: 100%;
-    margin: 90px 50px 30px;
+    margin: 40px 50px 30px;
 }
 .slider--inner{
     display: flex;
