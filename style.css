@@ -2,6 +2,7 @@
     --color-fondo: #03030394;
     --color-title: #B53492;
     --color-text:aliceblue;
+    --header-fondo:#010409;
 }
 * {
     margin: 0;
@@ -22,7 +23,7 @@ body{
 .pagina{
     background-color: var(--color-fondo);
     margin: auto;
-    max-width: 1200px;
+    /*max-width: 1200px;*/
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -36,6 +37,8 @@ body{
     flex-flow: row wrap;
     justify-content: space-between;
     align-items: center;
+    background-color: var(--header-fondo);
+    padding: 25px 40px;
 }
 .logo{
     height: 3.5em;
@@ -89,6 +92,20 @@ header .a:hover{
     object-position: center;
 }
 
+/*PRODUCTOS---------------------------------*/
+.Productos{
+    margin: 80px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.Productos h1{
+    color: var(--color-title);
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center
+}
+
 /*NOSOTROS----------------------------------*/
 .nosotros{
     color: var(--color-text);
@@ -104,10 +121,14 @@ header .a:hover{
     text-align: center
 }
 .nosotros p{
-    font-size: 1.4em;
+    color: #ffffffcc;
+    line-height: 1.5;
+    font-size: 1.1em;
     margin-bottom: 20px;
     text-align: center;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.938);
+    background-color: var(--color-fondo);
+    border-radius: 10px;
+    padding: 10px;
 }
 
 /*DONDE ESTAMOS----------------------------------*/
@@ -187,7 +208,7 @@ textarea {
 }
 
 /*MEDIA QUERYS ---------------------------------------*/
-@media screen and (max-width:600px){
+@media screen and (max-width:700px){
     .header .button{
         display: block;
     }
