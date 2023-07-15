@@ -21,3 +21,19 @@ setInterval(function(){  //funcion que va alternando las imagenes
         index=0;
     }
 },3500)// intervalo de 3.5 seg.
+
+//Secciones aparecen ------------------------------------------------------------------------------------------
+let animado = document.querySelectorAll(".animado");
+
+function mostrarScroll() {
+    let scrollTop = document.documentElement.scrollTop; // variable con todos los elementos con la clase .animado
+    for (var i=0; i < animado.length; i++) { // usamos for para recorrer uno por uno los elementos
+        let alturaAnimado = animado[i].offsetTop; // vemos la altura a la que esta el scroll del elemento
+        if(alturaAnimado - 350 < scrollTop){ //Elemento aparece cuando el scroll toca la punta superior menos 300
+            animado[i].style.opacity = 1; // le damos opacity 1 para que aparezca
+            animado[i].classList.add("mostrarArriba");
+        }
+    }
+}
+
+window.addEventListener('scroll', mostrarScroll); // agregamos evento que vea el scroll y llame la funcion
