@@ -2,7 +2,7 @@
     --color-fondo: #03030394;
     --color-title: #B53492;
     --color-text:aliceblue;
-    --header-fondo:#010409;
+    --header-fondo:#1e2125;
 }
 * {
     margin: 0;
@@ -38,7 +38,7 @@ body{
     justify-content: space-between;
     align-items: center;
     background-color: var(--header-fondo);
-    padding: 25px 40px;
+    padding: 12px 40px;
 }
 .logo{
     height: 3.5em;
@@ -76,14 +76,15 @@ header .a:hover{
 /*SLIDER----------------------------------*/
 .slider{
     overflow: hidden;
-    height: 100%;
-    margin: 40px 50px 30px;
+    margin: 30px 100px 30px;
+    border-radius: 20px;
+    box-shadow: 0px 3px 10px var(--color-title);
 }
 .slider--inner{
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    transition: all 2s ease-in;
+    transition: all 3s ease;
 }
 .slider--inner img{
     width: 100%;
@@ -195,13 +196,16 @@ textarea {
 .botonContacto:hover {
     cursor: pointer;
 }
-.Logos-contacto{
+
+/*FOOTER ---------------------------------------*/
+.Logos-footer{
+    background-color: var(--header-fondo);
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
 }
-.Contacto i {
+.Logos-footer i {
     color: var(--color-title);
     font-size: 3em;
     margin: 12px;

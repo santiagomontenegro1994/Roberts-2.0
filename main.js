@@ -20,4 +20,4 @@ setInterval(function(){  //funcion que va alternando las imagenes
     if(index > (images.length-1)){ //cuando el index llega a el mismo numero de cantidad de imagenes se resetea
         index=0;
     }
-},2000)// intervalo de 2 seg.
+},3500)// intervalo de 3.5 seg.
