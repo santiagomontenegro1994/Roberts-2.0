@@ -218,9 +218,8 @@ textarea {
 }
 
 .mostrarArriba {
-    animation: mostrarArriba 1s;
+    animation: mostrarArriba 1s; /*animacion para que se muestre desde abajo hacia arriba*/
 }
-
 @keyframes mostrarArriba{
     0% {
         transform: translateY(60px);
