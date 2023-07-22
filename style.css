@@ -201,17 +201,49 @@ textarea {
 }
 
 /*FOOTER ---------------------------------------*/
-.Logos-footer{
+footer{
+    border-radius: 20px 20px 0 0 ;
     background-color: var(--header-fondo);
+    padding: 10px 0px 20px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content:space-around;
+    align-items: center;
+}
+footer i {
+    color: var(--color-title);
+    font-size: 1.7em;
+    margin: 10px;
+}
+footer h1{
+    font-size: 1em;
+    color:var(--color-text);
+    text-align: center;
+}
+footer h2{
+    font-size: 1em;
+    color:var(--color-text);
+    text-align: center;
+    margin-top: 5px;
+}
+.Telefonos-footer,.Horarios-footer{
+    display: flex;
+    flex-direction: column;
     justify-content: center;
 }
-.Logos-footer i {
-    color: var(--color-title);
-    font-size: 3em;
-    margin: 12px;
+.Dia-footer{
+    color:var(--color-title);
+}
+.Title-footer{
+    margin-bottom: 17px;
+}
+.Footer-i{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }
 
 /*SECCIONES ANIMADAS ---------------------------------------*/
