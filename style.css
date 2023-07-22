@@ -109,8 +109,12 @@ header .a:hover{
 
 /*NOSOTROS----------------------------------*/
 .nosotros{
+    height: 100vh;
+    background-color: var(--header-fondo);
+    width: 100%;
     color: var(--color-text);
-    margin: 80px 30px;
+    margin: 80px 0;
+    padding: 20px 30px 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -127,7 +131,6 @@ header .a:hover{
     font-size: 1.1em;
     margin-bottom: 20px;
     text-align: center;
-    background-color: var(--color-fondo);
     border-radius: 10px;
     padding: 10px;
 }  
